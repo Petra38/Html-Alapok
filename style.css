@@ -30,11 +30,12 @@
 
 body {
     /* Háttérszín */
-    background-color: #ffffff;
+    background: #fffef7;
+    background: radial-gradient(circle, rgba(255, 254, 247, 1) 1%, rgba(242, 231, 199, 1) 100%);
     /* Betűtípus */
-    font-family: sans-serif;
+    font-family: "Lucida Console", "Courier New", monospace;
     /* Betűszín */
-    color: #333333;
+    color: #161615;
     /* Sormagasság */
     line-height: 1.6;
 }
@@ -42,30 +43,53 @@ body {
 
 /* --- OLDAL KERET --- */
 .oldal-keret {
+    margin: 80px 400px;
+
     /* Az egész oldal kerete / szélessége */
 }
 
 
 /* --- FEJLÉC --- */
 .fejlec {
+    margin-left: 40px;
+    height: 200px;
+    width: 75%;
+    background: #e38c1b;
+    background: linear-gradient(158deg, rgba(227, 140, 27, 1) 0%, rgba(209, 113, 65, 1) 50%, rgba(237, 191, 83, 1) 100%);
+    flex-direction: column;
+    display: flex;
+    place-items: center;
+    justify-content: center;
+    border-radius: 20px;
     /* Háttér, padding, szöveg igazítás */
 }
 
 .fooldal-cim {
-    /* Főcím stílusa */
+    text-shadow: 2px 2px 5px rgb(255, 227, 125);
 }
 
 .kiemeles {
+    text-shadow: 2px 2px 5px rgb(255, 208, 0);
+    color: #fcfff3;
     /* A "CSS" szó kiemelése a címben */
 }
 
 .alcim {
+
     /* Alcím stílusa */
 }
 
 
 /* --- BEVEZETŐ --- */
 .bevezeto {
+    padding: 60px 60px;
+    height: 100px;
+    width: 85%;
+    background-color: #ffbb2825;
+    border-radius: 20px;
+    display: flex;
+    place-items: center;
+    justify-content: center;
     /* A bevezető szekció háttere, padding-ja */
 }
 
@@ -76,16 +100,25 @@ body {
 
 /* --- KÁRTYÁK (a fő tartalom elemei) --- */
 .kartya {
+padding: 20px 30px;
+    background-color: #ffbb2825;
+    border-radius: 20px;
+    box-shadow: #161615;
+
     /* Háttér, padding, margin, border, border-radius, box-shadow */
 }
 
 .kartya-cim {
+    display: flex;
+    place-items: center;
+    justify-content: center;
     /* Kártya címek stílusa */
 }
 
 
 /* --- SZABÁLYOK LISTA --- */
 .szabaly-lista {
+
     /* Lista stílus (list-style, padding) */
 }
 
@@ -96,6 +129,9 @@ body {
 
 /* --- INSPIRÁCIÓ RÁCS --- */
 .inspiracio-racsozat {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
     /* Használj flexbox-ot a 4 elem elrendezéséhez!
        display: flex;
        flex-wrap: wrap;
@@ -104,26 +140,39 @@ body {
 }
 
 .inspiracio-elem {
+    padding: 10px 20px;
+    background: #e38c1b;
+    background: linear-gradient(158deg, rgba(227, 140, 27, 1) 0%, rgba(209, 113, 65, 1) 50%, rgba(237, 191, 83, 1) 100%);
+    border-radius: 20px;
+
     /* Egyes inspiráció kártyák */
 }
 
 .inspiracio-elem h4 {
+
     /* Inspiráció alcímek */
 }
 
 
 /* --- TECHNOLÓGIA BADGE-EK --- */
 .tech-lista {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
     /* Flexbox elrendezés a badge-ekhez */
 }
 
 .tech-badge {
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: #ffffffb7;
     /* Kis címkék stílusa: háttér, padding, border-radius */
 }
 
 
 /* --- OLDALSÁV --- */
 .oldalsav {
+
     /* Oldalsáv háttere, pozíciója */
 }
 
